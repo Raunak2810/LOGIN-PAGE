@@ -6,8 +6,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  overflow: hidden;
+  /* position: relative;
+  overflow: hidden; */
   animation: zoomBg 20s ease-in-out infinite alternate;
 }
 @keyframes zoomBg {
@@ -31,9 +31,11 @@ body::before {
 .container {
   display: flex;
   background: linear-gradient(120deg, #231c1b 60%, #de5900 120%);
-  border-radius: 14px;
-  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.3);
-  min-width: 550px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  width: 700px;
+  max-width: 90%;
+  height: 400px;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -62,6 +64,9 @@ body::before {
   filter: blur(0);
   opacity: 1;
   animation: slideInLeft 1.2s ease forwards;
+  /* display: flex; */
+  flex-direction: column;
+  /* justify-content: center; */
 }
 @keyframes slideInLeft {
   from {
@@ -94,7 +99,7 @@ body::before {
   margin-bottom: 7px;
   color: #ffa360;
 }
-.login-box input {
+/* .login-box input {
   width: 100%;
   padding: 8px;
   margin-bottom: 16px;
@@ -105,6 +110,34 @@ body::before {
   font-size: 15px;
   outline: none;
   transition: border 0.3s, box-shadow 0.3s;
+} */
+
+.input-box {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px 35px 10px 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ff7300;
+  color: #fff;
+}
+
+.input-box label {
+  position: absolute;
+  top: -18px;
+  left: 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.icon {
+  position: absolute;
+  right: 5px;
+  top: 10px;
 }
 .login-box input:focus {
   border: 1.5px solid #de5900;
@@ -112,7 +145,7 @@ body::before {
 }
 .login-box button {
   width: 100%;
-  padding: 10px 0;
+  padding: 10px;
   background: linear-gradient(90deg, #fa7c27, #da5412);
   border: none;
   color: #fff;
@@ -126,6 +159,7 @@ body::before {
 .login-box button:hover {
   transform: translateY(-3px);
   box-shadow: 0 0 15px #de590080;
+  background: linear-gradient(90deg, #fa7c27, #da5412);
 }
 .login-box .register-link {
   margin-top: 11px;
@@ -144,12 +178,12 @@ body::before {
   padding: 42px 24px;
   border-radius: 0 12px 12px 0;
   background: none;
-  width: 240px;
+  width: 50%;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   animation: fadeInRight 1.4s ease forwards;
 }
 @keyframes fadeInRight {
@@ -172,3 +206,5 @@ body::before {
   font-size: 15px;
   color: #ffe3c2;
 }
+
+
