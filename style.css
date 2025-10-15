@@ -64,10 +64,8 @@ body::before {
   filter: blur(0);
   opacity: 1;
   animation: slideInLeft 1.2s ease forwards;
-  /* display: flex; */
-  flex-direction: column;
-  /* justify-content: center; */
-}
+   flex-direction: column;
+  }
 @keyframes slideInLeft {
   from {
     transform: translateX(-120%);
@@ -99,24 +97,10 @@ body::before {
   margin-bottom: 7px;
   color: #ffa360;
 }
-/* .login-box input {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 16px;
-  border-radius: 5px;
-  border: 1px solid #ffa360;
-  background: #231c1b;
-  color: #fff;
-  font-size: 15px;
-  outline: none;
-  transition: border 0.3s, box-shadow 0.3s;
-} */
-
 .input-box {
   position: relative;
   margin-bottom: 25px;
 }
-
 .input-box input {
   width: 100%;
   padding: 10px 35px 10px 10px;
@@ -125,7 +109,6 @@ body::before {
   border-bottom: 2px solid #ff7300;
   color: #fff;
 }
-
 .input-box label {
   position: absolute;
   top: -18px;
@@ -133,7 +116,6 @@ body::before {
   font-size: 14px;
   color: #ccc;
 }
-
 .icon {
   position: absolute;
   right: 5px;
@@ -201,10 +183,10 @@ body::before {
   font-weight: bold;
   color: #ffa360;
 }
-
 .welcome-box p {
   font-size: 15px;
   color: #ffe3c2;
 }
+
 
 
